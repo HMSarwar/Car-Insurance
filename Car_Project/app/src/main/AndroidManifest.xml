@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.devil.car_project">
+<!-- Akram Khan = akrammiru@gmail.com -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abc"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.Viewer_InsuranceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.Login_InsuranceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.Login_InsuranceActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.Viewer_PoliceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.Login_PoliceActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.Login_PoliceActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".activities.Login_InsuranceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.Login_PoliceActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.Viewer_UserActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.LoginActivity"
+
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.LoginActivity"
+                />
+
+        </activity>
+        <activity
+            android:name=".activities.ShowDataActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName="com.example.devil.car_project.activities.Viewer_UserActivity"
+
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.devil.car_project.activities.Viewer_UserActivity"
+                />
+
+        </activity>
+
+
+
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait" /><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>
